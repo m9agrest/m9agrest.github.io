@@ -1,23 +1,142 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Ермилов Михаил Владимирович</title>
+		<link rel="stylesheet" href="min/css/background.css">
+		<link rel="stylesheet" href="min/css/font.css">
+		<link rel="stylesheet" href="min/css/title.css">
+		<link rel="stylesheet" href="min/css/block.css">
+		<link rel="stylesheet" href="min/css/box.css">
+		<script src="min/js/block.js"></script>
 	</head>
-	<body>
+	<body onload="onloadBlock()">
+		<div class="container">
+			<div class="box title">
+				<div class="title-name">Ермилов Михаил Владимирович</div>
+				<div class="title-info">
+					<span>Родился 04.05.2001</span>
+					<br>
+					<br>
+					<span>На момент 13.09.2023</span>
+					<ul>
+						<li>Стартапер</li>
+						<li>Блогер</li>
+						<li>Программист</li>
+						<li>Майнкрафтер</li>
+					</ul>
+				</div>
+			</div>
+			<div class="collection-block">
+				<div class="collection-block-button"></div>
+				
+				<div class="box block">
+					<div class="block-title">Программирование</div>
+					<div class="block-content">
+						<div class="block-content-list">
+							<ul>
+								<li onclick="blockText(LangC, listProgramming)">C</li>
+								<li onclick="blockText(LangJava, listProgramming)">Java</li>
+								<li onclick="blockText(LangCS, listProgramming)">C#</li>
+								<li onclick="blockText(LangPascal, listProgramming)">Pascal</li>
+								<li class="block-content-list-button" onclick="blockSublist(SublistWeb)">Web</li>
+								<ul id="SublistWeb" style="display: none;">
+									<li onclick="blockText(LangHTML, listProgramming)">HTML</li>
+									<li onclick="blockText(LangCSS, listProgramming)">CSS</li>
+									<li onclick="blockText(LangJS, listProgramming)">JS</li>
+									<li onclick="blockText(LangPHP, listProgramming)">PHP</li>
+								</ul>
+							</ul>
+						</div>
+						<div id="LangNone" class="block-content-text">
+							
+						</div>
+						<div id="LangC" style="display: none;" class="block-content-text">
+							<li>Язык программирования C</li>
+							<br>
+							<span>Занимаюсь данным языком с сентября 2021. Правда не особо усердно, но уже смог овладеть навыками работы с структурами, массивами, файловой системой, датой и временем, работой с интернетом. Так-же писал разного рода библиотеки для упращения работ с лабораторными и практическими, в ходе обучения в МиВЛГУ.</span>
+						</div>
+						<div id="LangJava" style="display: none;" class="block-content-text">
+							<li>Язык программирования Java</li>
+							<br>
+							<span>Данный язык я начал изучать с весны 2019 года, с помощью книги "Программирование на Java для начинающих" от Васильева А.Н.. Создавал в ходе пет проектов, разные оконные игры с использованием Swing технологий.</span>
+							<li>Bukkit</li>
+							<span>В ходе жизненго пути, писал разные плагины для своих серверов Minecraft, основываясь на популярном ядре Bukkit, и используя его API. Так-же иногда подключая стороние плагины, для совмещения функционала моего плагина и уже готового.</span>
+							<ul>
+								<li>Примечания</li>
+								<ul>
+									<li>В 2021 году, сдавал ЕГЭ, с помощью данного языка.</li>
+									<li>С осени 2023 года, преподаю данный язык в IT-кубе, распологающемся в гимназии №6 в г. Муром.</li>
+								</ul>
+							</ul>
+						</div>
+						<div id="LangCS" style="display: none;" class="block-content-text">
+							<li>Язык программирования C#</li>
+							<br>
+							<span>Начиная изучать Unity3D зимой 2020 года, я сталкнулся с API данного движка, использующего C# язык. За это время, я научился создавать разные приложения, библиотеки и простые скрипты.</span>
+							<li>websocket-sharp</li>
+							<span>В ходе потребностей, мне необходимо было использовать websocket соединение, для этого я начал изучать и использовать данную библиотеку, хотя она не обновлялась очень давно. С данной библиотекой я познакомился по рекомендациям разных программистов-блогеров, летом 2023.</span>
+							<li>Newtonsoft.Json</li>
+							<span></span>
+							<li>Unity</li>
+							<span></span>
+						</div>
+						<div id="LangPascal" style="display: none;" class="block-content-text">
+							<li>Язык программирования Pascal</li>
+							<br>
+							<span>Этот школьный язык, я как нистранно изучил в школе с осени 2016 года и продолжил использовать для разных соревнований вплоть до начала весны 2019 года. За это время, я пытался создавать на нем консольные игры, сохранять необходимые файлы на устройства и использовать интернет.</span>
+							<ul>
+								<li>Соревнования</li>
+								<ul>
+									<li>3 место, в региональной олимпиаде по информационным технологиям обучающихся проффесиональных образовательных организаций, расположенных на территории Владимирской области, в секции первокурсников. 21 марта 2018 года.</li>
+									<li>Участие в региональной олимпиаде по информационным технологиям обучающихся проффесиональных образовательных организаций Владимирской области. 20 марта 2019 года.</li>
+								</ul>
+							</ul>
+						</div>
+						<div id="LangHTML" style="display: none;" class="block-content-text">
+							<li>Язык разметки HTML</li>
+							<br>
+							<span>Данный язык разметки, я начал изучать с лета 2017 года.</span>
+						</div>
+						<div id="LangCSS" style="display: none;" class="block-content-text">
+							<li>Язык таблиц стилей CSS</li>
+							<br>
+							<span>Данный язык разметки, я начал изучать вместе с HTML.</span>
+							<li>Boostrap</li>
+							<span>В конце лета 2021, в ходе выполнения тестового задания для собеседования, мне пришлось познакомится с данной библиотекой, которая с одной стороны и упрощает разметку, но с другой, тот-же самый flex, справляется с этой задачей.</span>
+						</div>
+						<div id="LangJS" style="display: none;" class="block-content-text">
+							<li>Язык программирования Java Script</li>
+							<br>
+							<span>Данный не типизированный язык, я изучаю с лета 2016. Первое мое знакомство было с уроков, о том как писать моды на Minecraft PE, с использованием BlockLauncher и его API. В 2017 году, начал изучать DroidScript, где так-же используется данный язык. После этого, начал использовать данный язык уже для работы с сайтами.</span>
+							<li>BlockLauncher</li>
+							<span>Как было сказано ранние, с помощью данной утилиты и его API, я писал свои первые моды на выше упомянутую игру.</span>
+							<li>DroidScript</li>
+							<span>С помощью данной утилиты и его API, я писал одни из первых игр на телефон и использовал так-же для участия в конкурсе.</span>
+							<li>DroidScript</li>
+							<span>С помощью данной утилиты, я писал одни из первых игр на телефон и использовал так-же для участия в конкурсе.</span>
+						</div>
+						<div id="LangPHP" style="display: none;" class="block-content-text">
+							<li>Язык программирования PHP</li>
+							<br>
+							<span></span>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="collection-block-button"></div>
+			</div>
+		</div>
+	<!--
 		<h1>Стек знаний</h1>
 		
 		<ul>
-			<li>C</li>
 			<li>C#</li>
 			<li>Библиотеки C#</li>
 			<ul>
 				<li>websocket-sharp</li>
 				<li>Newtonsoft.Json</li>
 				<li>Unity</li>
-			</ul>
-			<li>Java</li>
-			<li>Библиотеки Java</li>
-			<ul>
-				<li>Bukkit</li>
 			</ul>
 			<li>PHP</li>
 			<li>Web:</li>
@@ -64,5 +183,6 @@
 		<a href="https://vk.com/mina987">Страница в vk</a><br>
 		<a href="https://github.com/m9studio">GitHub страница</a><br>
 		<a href=""></a><br>
+		-->
 	</body>
 </html>
