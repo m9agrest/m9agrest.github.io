@@ -38,7 +38,9 @@ function onloadBlock()
 		LangHTML,
 		LangCSS,
 		LangJS,
-		LangPHP
+		LangPHP,
+		LangMySQL,
+		LangWeb
 	];
 }
 

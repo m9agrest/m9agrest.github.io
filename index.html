@@ -38,17 +38,21 @@
 								<li onclick="blockText(LangJava, listProgramming)">Java</li>
 								<li onclick="blockText(LangCS, listProgramming)">C#</li>
 								<li onclick="blockText(LangPascal, listProgramming)">Pascal</li>
-								<li class="block-content-list-button" onclick="blockSublist(SublistWeb)">Web</li>
+								<li class="block-content-list-button" onclick="blockSublist(SublistWeb); blockText(LangWeb, listProgramming);">Web</li>
 								<ul id="SublistWeb" style="display: none;">
 									<li onclick="blockText(LangHTML, listProgramming)">HTML</li>
 									<li onclick="blockText(LangCSS, listProgramming)">CSS</li>
 									<li onclick="blockText(LangJS, listProgramming)">JS</li>
 									<li onclick="blockText(LangPHP, listProgramming)">PHP</li>
+									<li onclick="blockText(LangMySQL, listProgramming)">MySQL</li>
 								</ul>
+								<li>Basic</li>
+								<li>Assembler</li>
+								<li>Python</li>
 							</ul>
 						</div>
 						<div id="LangNone" class="block-content-text">
-							
+							<span>С лета 2016 года, я занимаюсь всем этим мракобесием. Продвинулся ли я? Однозначно да, раньше для меня это было что-то страшным и на уровне магии, сейчас увы, это для меня набор нулей и едениц, интерпретируемых в ассемблер команды, в свою очередь интерпретируемые в C, и уже с него в си-подобные, а от них и по цепочке до гребанного питона. Зная хоть один си-подобный и ооп, любой язык, кроме машинного и ассемблера - изучить легко! А про интернет - у него вкладка web, там-всё написанно. Зачем я начал изучать? Мне хотелось писать игры еще с далёкого 2014 года, спасибо таким играм как Minecraft, Terraria и фильму Трон: Наследие.</span>
 						</div>
 						<div id="LangC" style="display: none;" class="block-content-text">
 							<li>Язык программирования C</li>
@@ -76,9 +80,9 @@
 							<li>websocket-sharp</li>
 							<span>В ходе потребностей, мне необходимо было использовать websocket соединение, для этого я начал изучать и использовать данную библиотеку, хотя она не обновлялась очень давно. С данной библиотекой я познакомился по рекомендациям разных программистов-блогеров, летом 2023.</span>
 							<li>Newtonsoft.Json</li>
-							<span></span>
+							<span>Весной 2022, в ходе выполнения лаб., мне было необходимо их как-то хранить, хоть нас и принуждали к xml разметки, я всё-же использовал JSON и данную библиотеку.</span>
 							<li>Unity</li>
-							<span></span>
+							<span>С зимы 2020 года, начал изучать данную программу и её API.</span>
 						</div>
 						<div id="LangPascal" style="display: none;" class="block-content-text">
 							<li>Язык программирования Pascal</li>
@@ -111,32 +115,65 @@
 							<li>BlockLauncher</li>
 							<span>Как было сказано ранние, с помощью данной утилиты и его API, я писал свои первые моды на выше упомянутую игру.</span>
 							<li>DroidScript</li>
-							<span>С помощью данной утилиты и его API, я писал одни из первых игр на телефон и использовал так-же для участия в конкурсе.</span>
-							<li>DroidScript</li>
-							<span>С помощью данной утилиты, я писал одни из первых игр на телефон и использовал так-же для участия в конкурсе.</span>
+							<span>С помощью данной утилиты и его API, я писал одни из первых игр на телефон и использовал так-же для участия в конкурсе. С данной программой я познакомился осенью 2017 года.</span>
+							<li>three.js</li>
+							<span>В ходе создания web игр, мне стало интересно поработать в web с 3D сценами, моделями и прочим. Из-за чего весной 2019 года начал изучать данную библиотеку и все сопутсвующие.</span>
+							<li>jquery</li>
+							<span>В ходе изучения сайтостроения, мне было необходимо отправлять запросы на мой первый и простенький PHP скрипт, из-за чего мой выбор пал на данную библиотеку зимой 2019 года. Сейчас, я уже сам пишу функции для создания разного рода запросов на сервер.</span>
 						</div>
 						<div id="LangPHP" style="display: none;" class="block-content-text">
 							<li>Язык программирования PHP</li>
 							<br>
-							<span></span>
+							<span>Данный язык я начал изучать зимой в 2019 году. За это время мной было изучено множество внутренних технологий и методов, включая ООП данного языка.</span>
+						</div>
+						<div id="LangMySQL" style="display: none;" class="block-content-text">
+							<li>СУБД MySQL</li>
+							<br>
+							<span>В ходе работы с php, мне необходимо было каким-то образом хранить данные, из-за чего я начал изучать данное СУБД с 2021 года.</span>
+						</div>
+						<div id="LangWeb" style="display: none;" class="block-content-text">
+							<span>Web окружал меня с самого начала моего пути программиста. JSON, websocet, cookie, post и get запросы, работы с субд, это всё я знаю как отче наш, да и плюсом отлавливаю и читаю запросы в браузерах, благо есть консоль разработчика, файлы с сайта я от туда-же ворую. И да, я настолько приисполнился, что использую данную консоль для верстки стилей сайта и для js команд. А что вы мне сделаете? Даже DNS для меня не магазин, а просто информация о домене и куда он ведет.</span>
+							<ul>
+								<li>Проекты</li>
+								<ul>
+									<li>Игра: игра в города; 2018</li>
+									<li>Игра: Assassin in Dungeon; 2018-2019</li>
+									<li>Бот вк: <a href="https://vk.com/m9.halloween">тыквенный переполох</a>; 2019-2021</li>
+									<li>Бот вк и тг: <a href="https://vk.com/m9.legend">легенда о герое</a>; 2020-2021</li>
+									<li>Соц. сеть: <a href="https://vk.com/adaptkey">ADAPT KEY</a>; 2021-Нынешнее время</li>
+								</ul>
+								<li>Соревнования</li>
+								<ul>
+									<li>1 место, в 15 ежегодной научно-практической конференции студентов ГБПОУВО МКРП, в секции Информационно-коммуникационных технологий. 30 марта 2018 года.</li>
+									<ul>
+										<li>Так-же дан диплом с номинацией "За научню дерзость (новизну)"</li>
+										<li>Проект с которым участвовал: города, написанные на DroidScript с помощью JS.</li>
+									</ul>
+									<li>3 место, в 16 ежегодной научно-практической конференции студентов ГБПОУВО МКРП, в секции Информационно-коммуникационных технологий. 29 марта 2019 года.</li>
+									<ul>
+										<li>Так-же дан диплом с номинацией "За умение вести научную дискуссию"</li>
+										<li>Проект с которым участвовал: Assassin in Dungeon, игра написанная на HTML, CSS, JS и PHP.</li>
+									</ul>
+									<li>Технокубок 2019 - Отборочный Раунд 1. 23.09.2018.</li>
+								</ul>
+								<li>Изученные внешние API</li>
+								<ul>
+									<li>vk.com</li>
+									<li>ok.ru</li>
+									<li>telegram</li>
+									<li>qiwi.com</li>
+									<li>sms.ru</li>
+								</ul>
+							</ul>
 						</div>
 					</div>
 				</div>
-				
-				
 				<div class="collection-block-button"></div>
 			</div>
 		</div>
 	<!--
-		<h1>Стек знаний</h1>
 		
 		<ul>
-			<li>C#</li>
-			<li>Библиотеки C#</li>
-			<ul>
-				<li>websocket-sharp</li>
-				<li>Newtonsoft.Json</li>
-				<li>Unity</li>
 			</ul>
 			<li>PHP</li>
 			<li>Web:</li>
@@ -149,10 +186,6 @@
 					<li>jquery</li>
 				</ul>
 				<li>CSS</li>
-				<li>Библиотеки CSS</li>
-				<ul>
-					<li>boostrap</li>
-				</ul>
 			</ul>
 			<li>Прочие API</li>
 			<ul>
