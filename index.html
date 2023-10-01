@@ -29,7 +29,7 @@
 			<div class="collection-block">
 				<div class="collection-block-button"></div>
 				
-				<div class="box block">
+				<div class="box block" id="Programming">
 					<div class="block-title">Программирование</div>
 					<div class="block-content">
 						<div class="block-content-list">
@@ -46,13 +46,24 @@
 									<li onclick="blockText(LangPHP, listProgramming)">PHP</li>
 									<li onclick="blockText(LangMySQL, listProgramming)">MySQL</li>
 								</ul>
-								<li>Basic</li>
-								<li>Assembler</li>
-								<li>Python</li>
+								<li onclick="blockText(LangBasic, listProgramming)">Basic</li>
+								<li onclick="blockText(LangAssembler, listProgramming)">Assembler</li>
+								<li onclick="blockText(Lang1С, listProgramming)">1С</li>
+								<li onclick="blockText(LangPython, listProgramming)">Python</li>
 							</ul>
 						</div>
 						<div id="LangNone" class="block-content-text">
 							<span>С лета 2016 года, я занимаюсь всем этим мракобесием. Продвинулся ли я? Однозначно да, раньше для меня это было что-то страшным и на уровне магии, сейчас увы, это для меня набор нулей и едениц, интерпретируемых в ассемблер команды, в свою очередь интерпретируемые в C, и уже с него в си-подобные, а от них и по цепочке до гребанного питона. Зная хоть один си-подобный и ооп, любой язык, кроме машинного и ассемблера - изучить легко! А про интернет - у него вкладка web, там-всё написанно. Зачем я начал изучать? Мне хотелось писать игры еще с далёкого 2014 года, спасибо таким играм как Minecraft, Terraria и фильму Трон: Наследие.</span>
+							<ul>
+								<li>Основные ссылки</li>
+								<ul>
+									<li><a href="https://vk.com/m9.studio">Основная группа ВК</a></li>
+									<li><a href="https://www.youtube.com/@m9_studio">YouTube канал</a></li>
+									<li><a href="https://github.com/m9studio">Основной GitHub</a></li>
+									<li><a href="https://m9studio.github.io">Основной Сайт</a></li>
+									<li><a href="https://www.m9-studio.ru">Сайт созданный через GitHub</a></li>
+								</ul>
+							</ul>
 						</div>
 						<div id="LangC" style="display: none;" class="block-content-text">
 							<li>Язык программирования C</li>
@@ -83,6 +94,14 @@
 							<span>Весной 2022, в ходе выполнения лаб., мне было необходимо их как-то хранить, хоть нас и принуждали к xml разметки, я всё-же использовал JSON и данную библиотеку.</span>
 							<li>Unity</li>
 							<span>С зимы 2020 года, начал изучать данную программу и её API.</span>
+							<ul>
+								<li>Написанные библиотеки</li>
+								<ul>
+									<li><a href="https://github.com/m9studio/HexagonMatrix">Коллекция для хранения и обработки гексанальной матрицы</a></li>
+									<li><a href="https://github.com/m9studio/HexagonMatrix.Tracer">Дополнение к вышеуказанной коллекции, для поиска пути</a></li>
+									<li><a href="https://github.com/m9studio/HexagonMatrix">Библиотека "теории вероятности"</a></li>
+								</ul>
+							</ul>
 						</div>
 						<div id="LangPascal" style="display: none;" class="block-content-text">
 							<li>Язык программирования Pascal</li>
@@ -166,56 +185,45 @@
 								</ul>
 							</ul>
 						</div>
+						<div id="LangBasic" style="display: none;" class="block-content-text">
+							<li>язык программирования Basic</li>
+							<br>
+							<span>В ходе курсовой работы весной 2023, мне пришлось немного ознакомится с данным языком, лишь для того чтобы написать транслятор некоторых функций с данного языка.</span>
+						</div>
+						<div id="LangAssembler" style="display: none;" class="block-content-text">
+							<li>язык программирования Assembler</li>
+							<br>
+							<span>Весной 2023 мне пришла идея, немного ознакомится с данным языком, чтобы больше понимать внутреннее устройство компьютера.</span>
+						</div>
+						<div id="Lang1C" style="display: none;" class="block-content-text">
+							<li>язык программирования 1C</li>
+							<br>
+							<span>Синтаксис данного языка я узнал не по своей воле, а по воле случая, когда мне предложили работу, где необходимо его знать. В ходе быстрого изучения, мне пришла в голову идея создать транслятор с этого языка на язык js, так-как они сильно схожи, и обратно. Но увы, так идея и осталось идеей. Конец зимы 2023 года.</span>
+						</div>
+						<div id="LangPython" style="display: none;" class="block-content-text">
+							<li>язык программирования Python</li>
+							<br>
+							<span>Я являюсь противником данного языка!!</span>
+							<br>
+							<br>
+							<img width="80%" src="assets/error.gif">
+						</div>
 					</div>
 				</div>
+				
+				<!--<div class="box block" id="Bloger">
+					<div class="block-title">Блогерство</div>
+				</div>-->
+				
 				<div class="collection-block-button"></div>
 			</div>
 		</div>
 	<!--
-		
-		<ul>
-			</ul>
-			<li>PHP</li>
-			<li>Web:</li>
-			<ul>
-				<li>HTML</li>
-				<li>JS</li>
-				<li>Библиотеки JS</li>
-				<ul>
-					<li>three.js</li>
-					<li>jquery</li>
-				</ul>
-				<li>CSS</li>
-			</ul>
-			<li>Прочие API</li>
-			<ul>
-				<li>VK</li>
-			</ul>
-		</ul>
-		
-		
-		
-		
-		<h1>Созданные проекты</h1>
-		
-		<h3>C#</h3>
-		<a href="https://github.com/m9studio/HexagonMatrix">Коллекция для хранения и обработки гексанальной матрицы</a><br>
-		<a href="https://github.com/m9studio/HexagonMatrix.Tracer">Дополнение к вышеуказанной коллекции, для поиска пути</a><br>
-		<a href="https://github.com/m9studio/HexagonMatrix">Библиотека "теории вероятности"</a><br>
-		
-		<h3>Web</h3>
-		<a href="https://vk.com/m9.halloween">Бот в vk с мини игрой "Тыквенный переполох"</a><br>
-		<a href="https://vk.com/m9.legend">Бот с сайтом в vk и tg с мини игрой "Legend of Hero"</a><br>
-		<a href="https://vk.com/adaptkey">Социальная сеть "Adapt Key"</a><br>
-		
-		
-		
+
 		
 		<h1>Ссылки</h1>
 		
 		<a href="https://vk.com/mina987">Страница в vk</a><br>
-		<a href="https://github.com/m9studio">GitHub страница</a><br>
-		<a href=""></a><br>
 		-->
 	</body>
 </html>

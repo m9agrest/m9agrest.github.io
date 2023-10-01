@@ -40,7 +40,10 @@ function onloadBlock()
 		LangJS,
 		LangPHP,
 		LangMySQL,
-		LangWeb
+		LangWeb,
+		LangBasic,
+		LangAssembler,
+		LangPython
 	];
 }
 
